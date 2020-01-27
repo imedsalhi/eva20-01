@@ -1,0 +1,275 @@
+        * {
+            margin: 0px;
+        }
+        
+        body {
+            position: relative;
+        }
+        
+        #header {
+            height: 100vh;
+            background-image: url("../images/fdb.jpg");
+        }
+        
+        @font-face {
+            font-family: "uglyfont";
+            src: url('../lib/wild_flower/WildFlowerBold.ttf');
+        }
+        
+        h1 {
+            font-family: "uglyfont";
+            font-size: 3em;
+            color: rgb(26, 131, 58);
+            padding-left: 5px;
+        }
+        
+        #b_navigation {
+            visibility: hidden;
+            font-size: 1px;
+        }
+        
+        li a {
+            display: block;
+            color: rgb(26, 131, 58);
+            text-align: center;
+            font-size: 23px;
+            font-family: 'Montserrat', sans-serif;
+            padding: 14px 16px;
+            text-decoration: none;
+            z-index: 4;
+        }
+        
+        .active {
+            text-decoration: underline;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-self: flex-end;
+            list-style-type: none;
+            margin: 0;
+            position: fixed;
+            z-index: 4;
+        }
+        
+        #nav_bar {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #pantera {
+            width: 60vw;
+            height: 30vh;
+            background-color: rgba(26, 131, 57, 0.438);
+            border: dotted 3px white;
+            margin-top: 35vh;
+            margin-left: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #pantera p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 6em;
+            color: white;
+        }
+        
+        #about>p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 6em;
+            color: rgb(26, 131, 58);
+            text-align: center;
+        }
+        
+        #about i {
+            font-size: 3em;
+            color: rgb(26, 131, 58);
+            text-align: center;
+            opacity: 0.5;
+            margin-bottom: 1vh;
+        }
+        
+        .col-md-4 {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #n_titre {
+            height: 50vh;
+            background-image: url("../images/bg3.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #n_soustitre {
+            width: 60vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+            background-color: rgba(26, 131, 57, 0.438);
+            border: dotted 3px white;
+        }
+        
+        #n_soustitre p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2em;
+            color: rgb(26, 131, 58);
+            text-align: center;
+            color: white;
+        }
+        /* #team {
+    height: 70vh;
+} */
+        
+        #team img {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            border: 15px solid rgb(26, 131, 58);
+            margin-top: 2vh;
+            align-self: center;
+        }
+        
+        #team .col-md-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .nom-team {
+            font-size: 2em;
+            font-family: 'Dancing Script', cursive;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .discreption .role-team {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .glide {
+            display: flex;
+            height: 50vh;
+            background-image: url("../images/bg2.jpg");
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #quam {
+            margin: 5vh;
+            margin-top: 1vh;
+        }
+        
+        #quam img {
+            width: 25vw;
+            height: 35vh;
+        }
+        
+        #quam p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+            color: rgb(26, 131, 58);
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .col-md-4 {
+            margin-bottom: 2vh;
+        }
+        
+        #contact {
+            height: 55vh;
+            background-color: rgba(26, 131, 57, 0.438);
+            border: dotted 3px white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        
+        #but {
+            border: dotted 3px white;
+            width: 30vw;
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        
+        #but p {
+            font-size: 3em;
+            color: white;
+        }
+        
+        @media (max-width: 540px) {
+            #header {
+                display: flex;
+                flex-direction: column;
+            }
+            ul {
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                list-style-type: none;
+                margin: 0px;
+                width: 100%;
+                margin-top: 6vh;
+            }
+            .nav {
+                margin-top: 5vh;
+            }
+            li {
+                background-color: rgba(128, 128, 128, 0.39);
+            }
+            li a {
+                padding-bottom: 14px;
+                text-decoration: none;
+                width: max-content;
+                font-size: 2em;
+                color: white;
+            }
+            #b_navigation {
+                visibility: visible;
+                font-size: 2em;
+                color: rgb(26, 131, 58);
+                position: fixed;
+                align-self: flex-end;
+                z-index: 3;
+            }
+            #quam img {
+                /* width: 70vw;
+        height: 50vh; */
+                width: 100%;
+                height: 100%
+            }
+            #quam {
+                margin: 0px;
+            }
+            #team img {
+                width: 300px;
+                height: 300px;
+                border-radius: 200px;
+                border: 15px solid rgb(26, 131, 58);
+                margin-top: 2vh;
+                align-self: center;
+            }
+            #pantera p {
+                font-size: 3em;
+            }
+            #but p {
+                font-size: 2em;
+                color: white;
+            }
+        }
