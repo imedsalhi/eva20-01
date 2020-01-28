@@ -36,11 +36,21 @@
             font-family: 'Montserrat', sans-serif;
             padding: 14px 16px;
             text-decoration: none;
-            z-index: 4;
+            z-index: 10000;
+        }
+        
+        .colortext {
+            color: white;
         }
         
         .active {
             text-decoration: underline;
+        }
+        
+        .scrollabout {
+            /* width: 100vw; */
+            background-color: rgba(27, 25, 25, 0.74);
+            color: white;
         }
         
         ul {
